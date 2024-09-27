@@ -5,7 +5,7 @@
     "description": "Users Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341project1-ya7c.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
