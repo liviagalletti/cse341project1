@@ -45,7 +45,7 @@ const updateUser = async (req, res) => {
         birthday:req.body.birthday
     };
 
-    const response = await mongodb.getDatabase().db().collection('contacts').replaceOne(contact);
+    const response = await mongodb.getDatabase().db().collection('contacts').replaceOne({_id:userId}, contact);
     if (response.modifiedCount > 0){
         res.status(204).send();
     } else {
